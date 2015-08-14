@@ -21,5 +21,5 @@ Repair their code! There are 10 bugs in the code. Make a short description of wh
 $(document).ready(function() {
     $('.ul.li').css('list-style-type','square');
     var words = $('p').text().split('');
-    $('.output').text(words.length = 0);
+    $('.output').text(words.length);
 });
