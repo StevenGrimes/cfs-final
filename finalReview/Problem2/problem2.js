@@ -13,9 +13,9 @@ Repair their code! There are 10 bugs in the code. Make a short description of wh
 5.  removed 'nav'
 6.  added () after .text
 7.  deleted . before p
-8.  
-9.  
-10. 
+8.  made the var words
+9.  put words.length in parathesis
+10. set words length = 0
 */
 
 $(document).ready(function() {
