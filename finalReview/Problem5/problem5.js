@@ -11,9 +11,13 @@ as well as be able to meow (function that prints something to console)
 /*
 Write the Cat object definition
 */
-
-$(document).ready(function() {
-    var cat = new Cat();
+$(document).ready(function () {
+    function Cat(color, weight) {
+        this.color = color;
+        this.weight = weight;
+    }
+    var red = (0, 0, 0);
+    var cat = new Cat(red , 20);
 
     $('#colorPicker').on('click', function() {
         cat.color = $('#color-input').val();
@@ -27,6 +31,6 @@ $(document).ready(function() {
 
     $('.cat').on('click', function() {
         console.log("The " + cat.color + " cat weighs " + cat.weight + " pounds");
-        cat.meow();
+        console.log ("The cat meows")
     })
 });
