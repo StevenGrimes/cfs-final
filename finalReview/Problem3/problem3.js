@@ -11,5 +11,10 @@ if the ball is clicked, THEN worry about moving the ball div.
 */
 
 $(document).ready(function() {
-
+    $('.ball').on('click', function() {
+        $('.ball').remove();
+    })
+    $('.ball').on('click', function() {
+        $('#right').append('<div class="ball"></div>');
+    })
 });
